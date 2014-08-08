@@ -5,7 +5,8 @@ RUN apt-key adv --keyserver keyserver.ubuntu.com --recv C0A52C50
 RUN apt-key adv --keyserver keyserver.ubuntu.com --recv 7F0CEB10
 RUN echo "deb http://www.ubnt.com/downloads/unifi/distros/deb/ubuntu ubuntu ubiquiti" >> /etc/apt/sources.list
 
-RUN sed -i 's/\(archive.ubuntu.com\)/au.\1/g' /etc/apt/sources.list
+# Option to adjust the mirror to be country specific
+#RUN sed -i 's/\(archive.ubuntu.com\)/au.\1/g' /etc/apt/sources.list
 
 RUN apt-get update
 RUN apt-get install -yf unifi
