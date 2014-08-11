@@ -5,7 +5,7 @@ Provides a functional unifi controller installed on Ubuntu 14.04.
 Installation
 ---
 1. Git clone this repo & cd into it
-2. docker build -t unifi .
+2. `sudo ./build.sh`
 
 Running
 ---
